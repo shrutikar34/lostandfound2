@@ -7,16 +7,7 @@ export const context = createContext({
 function reducer(currentstate, action) {
   let newlist = currentstate;
   if (action.type === "ADD_ITEM") {
-    newlist = [
-      {
-        title: action.payload.title,
-        describe: action.payload.description,
-        location: action.payload.location,
-        date: action.payload.date,
-        contact: action.payload.contact,
-      },
-      ...currentstate,
-    ];
+    newlist = [action.payload.item, ...currentstate];
   }
   if (action.type === "ADD_ITEMS") {
     newlist = action.payload.post;
@@ -43,15 +34,12 @@ export default function Storage({ children }) {
       },
     });
   }
-  function addItem(title, description, location, date, contact) {
+
+  function addItem(item) {
     dispatch({
       type: "ADD_ITEM",
       payload: {
-        title,
-        description,
-        location,
-        date,
-        contact,
+        item,
       },
     });
   }

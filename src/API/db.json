@@ -1,9 +1,54 @@
- {
-   "posts": [
-      { "id": "1", "title":"Cat", "description": "a description","location":"location","date":"date" ,"contact":"Number" },
-      { "id": "2", "title":"Dog", "description": "a description","location":"location","date":"date" ,"contact":"Number" },
-      { "id": "3", "title":"Pencil Box", "description": "a description","location":"location","date":"date" ,"contact":"Number" },
-      { "id": "4", "title":" Box", "description": "a description","location":"location","date":"date" ,"contact":"Number" }
-    ]
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Cat",
+      "description": "a description",
+      "location": "location",
+      "date": "date",
+      "contact": "Number"
+    },
+    {
+      "id": "2",
+      "title": "Dog",
+      "description": "a description",
+      "location": "location",
+      "date": "date",
+      "contact": "Number"
+    },
+    {
+      "id": "3",
+      "title": "Pencil Box",
+      "description": "a description",
+      "location": "location",
+      "date": "date",
+      "contact": "Number"
+    },
+    {
+      "id": "4",
+      "title": " Box",
+      "description": "a description",
+      "location": "location",
+      "date": "date",
+      "contact": "Number"
+    },
+    {
+      "id": "8bb2",
+      "userId": 1,
+      "title": "",
+      "description": "",
+      "location": "",
+      "date": "",
+      "contact": ""
+    },
+    {
+      "id": "e233",
+      "userId": 1,
+      "title": "y",
+      "description": "h",
+      "location": "jji",
+      "date": "2024-08-16",
+      "contact": "7989"
     }
-  
+  ]
+}

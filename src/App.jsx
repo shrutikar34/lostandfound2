@@ -5,8 +5,8 @@ import ReportFoundItem from "./Components/ReportFoundItem";
 import ReportLostItem from "./Components/ReportLostItem";
 import Storage from "./Components/Store/Storage";
 import { Route, Routes } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Components/Home";
 import Contactus from "./Components/Contactus";
 

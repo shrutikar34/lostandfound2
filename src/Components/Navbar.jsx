@@ -6,47 +6,33 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`navbar bg-dark border-bottom border-body ${styles.navbar}`}
+        className={`navbar bg-dark border-bottom border-body h-20  `}
         data-bs-theme="dark"
       >
-        <ul className={`nav justify-content-end `}>
-          <li className="nav-item">
-            <Link
-              to="/"
-              className="navbar-brand nav-link "
-              aria-current="page"
-              href="#"
-            >
+        <ul className={`nav justify-content-end ${styles.navbar}`}>
+          <li className={`nav-item `}>
+            <Link to="/" className="navbar-brand nav-link " aria-current="page">
               <h3>Lost & Found</h3>
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item ">
             <Link to="/" className="nav-link">
               Home
             </Link>
           </li>
+
           <li className="nav-item">
-            <Link to="/reportlostitem" className="nav-link" href="#">
-              Report Lost Item
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/reportfounditem" className="nav-link" href="#">
-              Report Found Item
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/browselostitem" className="nav-link" href="#">
+            <Link to="/browselostitem" className="nav-link" >
               Browse Lost Item
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/browsefounditem" className="nav-link" href="#">
+            <Link to="/browsefounditem" className="nav-link" >
               Browse Found Item
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/contactus" className="nav-link" aria-disabled="true">
+            <Link to="/contactus" className="nav-link " aria-disabled="true">
               Contact Us
             </Link>
           </li>

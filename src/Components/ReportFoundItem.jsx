@@ -17,13 +17,22 @@ export default function ReportFoundItem() {
     const datevalue = date.current.value;
     const contactvalue = contact.current.value;
 
-    addItem(
-      founditemvalue,
-      descriptionvalue,
-      locationvalue,
-      datevalue,
-      contactvalue
-    );
+    fetch('http://localhost:3000/posts', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        userId:1,
+        title: founditemvalue,
+        description: descriptionvalue,
+        location:locationvalue,
+        date:datevalue,
+        contact:contactvalue
+       
+      })
+    })
+    .then(res => res.json())
+    .then(data => {console.log(data);addItem(data)});
+    
   }
 
   return (

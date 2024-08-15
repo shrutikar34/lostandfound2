@@ -39,6 +39,14 @@ export default function ReportLostItem() {
             />
           </div>
 
+          <div className="col-md-4">
+            <label htmlFor="contact" className="form-label">
+              Contact
+            </label>
+            <div id="contact">
+              <input type="number" className="form-control" />
+            </div>
+          </div>
           <div class="col-md-4">
             <label for="date" class="form-label">
               Date

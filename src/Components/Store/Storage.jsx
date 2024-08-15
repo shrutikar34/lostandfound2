@@ -2,6 +2,7 @@ import React, { useEffect, useReducer } from "react";
 import { createContext } from "react";
 export const context = createContext({
   allfounditem: [],
+  alllostitems:[],
   addItem: () => {},
 });
 function reducer(currentstate, action) {
@@ -45,28 +46,10 @@ export default function Storage({ children }) {
   }
   return (
     <div>
-      <context.Provider value={{ allfounditem: state, addItem }}>
+      <context.Provider value={{ allfounditem: state, alllostitems:state,addItem }}>
         {children}
       </context.Provider>
       ;
     </div>
   );
 }
-// const DEFAULT = [
-//   {
-//     id: "1",
-//     title: "title1",
-//     description: "description",
-//     location: "location",
-//     date: "date",
-//     contact: "98766676",
-//   },
-//   {
-//     id: "2",
-//     title: "title2",
-//     description: "description",
-//     location: "location",
-//     date: "date",
-//     contact: "98766676",
-//   },
-// ];

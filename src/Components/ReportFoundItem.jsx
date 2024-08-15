@@ -86,10 +86,10 @@ export default function ReportFoundItem() {
           </div>
 
           <div className="col-md-4">
-            <label htmlFor="date" className="form-label">
+            <label htmlFor="contact" className="form-label">
               Contact
             </label>
-            <div id="date">
+            <div id="contact">
               <input type="number" className="form-control" ref={contact} />
             </div>
           </div>
